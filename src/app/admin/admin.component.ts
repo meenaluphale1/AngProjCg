@@ -1,0 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
+})
+export class AdminComponent implements OnInit {
+
+  title:string="admin compo";
+  constructor() {console.log("Admin compo constr ") }
+
+  ngOnInit() {console.log("Admin comopo ngOnInit ")
+  }
+
+}

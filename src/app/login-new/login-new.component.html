@@ -1,0 +1,22 @@
+<h1>User List</h1>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Password</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of userList;">
+                <td>{{u.id}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.password}}</td>
+                <td><a [routerLink]="['/detail',u.id]"> {{u.role}}  </a> </td> 
+                 <!-- <td><a [routerLink]="['/detail',u.username]">{{u.username}} </a> </td>  -->
+                </tr>
+        </tbody>
+    </table>
+    
+</div>
